@@ -1,0 +1,180 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+
+#TitleLogin::after
+{
+    content: 'In';
+    color: rgb(166, 166, 255);
+    border-bottom: solid black;
+}
+
+#TitleReg::after
+{
+    content: 'Account';
+    color: rgb(166, 166, 255);
+    border-bottom: solid black;
+}
+
+.Login, .Register
+{
+    /* width: 100vw;     */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.Register
+{
+    display: none;
+}
+.inputs
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vw;
+    
+}
+
+.Name, .Password
+{
+    border-bottom: solid 2px;
+    margin: .5vw;
+}
+
+i
+{
+    margin-left: .5vw;
+}
+
+input
+{
+    border: none;
+    width: 15vw;
+    padding: .2vw;
+    
+}
+
+.links
+{
+ 
+}
+
+#errorP
+{
+    position: relative;
+    left: 1vw;
+}
+
+#forgotPass
+{
+    position: relative;
+    display: block;
+    color: white;
+    text-decoration: none;
+    top: 0;
+    font-size: .8vw;
+    left: 1vw;
+}
+
+.buttons
+{
+    margin-top: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+#btn1, #btn2
+{
+    width: 15vw;
+    background-color: transparent;
+    box-shadow: inset #161616 100vw 0px;
+    color: white;
+    border: solid black;
+    font-weight: bold;
+    transition: .5s;
+}
+
+#btn2
+{
+    background-color: white;
+    box-shadow: inset black 0 0px;
+    color: black;
+}
+
+#btn1:hover {
+    box-shadow: inset #161616 0px 0px;
+    color: black;
+}
+
+#btn2:hover {
+    box-shadow: inset #161616 100vw 0px;
+    color: white;
+}
+
+span
+{
+    font-weight: bold;
+}
+
+
+.custom-shape-divider-top-1705572659 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1705572659 svg {
+    position: relative;
+    display: block;
+    width: calc(194% + 1.3px);
+    height: 18vh;
+    transform: rotateY(180deg);
+    transition: 1s;
+}
+
+.custom-shape-divider-top-1705572659 .shape-fill {
+    fill: #161616;
+}
+
+.custom-shape-divider-bottom-1705572697 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1705572697 svg {
+    position: relative;
+    display: block;
+    width: calc(194% + 1.3px);
+    height: 18vh;
+    transform: rotateY(180deg);
+    transition: 1s;
+}
+
+.custom-shape-divider-bottom-1705572697 .shape-fill {
+    fill: #161616;
+}
